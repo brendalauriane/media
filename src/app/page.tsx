@@ -3,18 +3,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="m-4">
       <SignedOut>
         <SignInButton mode="modal">
-          <button className="bg-red-500">
-
-          </button>
+          <button>Sign up</button>
           </SignInButton> 
       </SignedOut>
 
       <SignedIn>
         <UserButton />
       </SignedIn>
+      <button>Sign in</button>
     </div>
   );
 }
